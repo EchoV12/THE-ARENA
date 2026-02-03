@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Arena - Salon</title>
+    <link rel="stylesheet" href="salon-style.css">
+</head>
+<body>
+    <div id="game-screen">
+        <div id="menu-container">
+            <h1 class="title">Layers of Your Reality</h1>
+            <h1 class="arena-title">-CHAT ROOM-</h1>
+
+            <div id="salon-box">
+                <div id="chat-display">
+                    <p><span class="system-msg">[SYSTEM]:</span> Connecté au salon.</p>
+                </div>
+                
+                <div class="chat-input-row">
+                    <input type="text" id="chat-input" placeholder="TAPER MESSAGE...">
+                    <button id="send-btn">ENVOYER</button>
+                </div>
+            </div>
+
+            <nav class="menu-nav">
+                <button class="menu-btn" onclick="window.location.href='../MenuPlay/index.html'">RETOUR</button>
+            </nav>
+        </div>
+    </div>
+    <script src="salon-logic.js"></script>
+</body>
+</html>

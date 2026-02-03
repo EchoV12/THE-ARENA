@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Courier New', monospace;
+}
+
+#menu-container {
+    width: 80vw;
+    max-width: 900px;
+    height: 80vh;
+    border: 3px solid #00d9ff; /* Ton bleu néon */
+    background-color: black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.4); /* Effet néon */
+}
+
+.title { color: #00d9ff; font-size: 2.5rem; text-shadow: 2px 2px #000; }
+.arena-title { color: #00d9ff; margin-bottom: 20px; }
+
+/* BOÎTE DE CHAT DYNAMIQUE */
+#salon-box {
+    width: 100%;
+    flex-grow: 1;
+    border: 1px solid #00d9ff;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#chat-display {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    color: #fff;
+    text-align: left;
+}
+
+.chat-input-row {
+    display: flex;
+    border-top: 1px solid #00d9ff;
+}
+
+#chat-input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    color: #00d9ff;
+    padding: 15px;
+    outline: none;
+}
+
+#send-btn {
+    background: #00d9ff;
+    color: black;
+    border: none;
+    font-weight: bold;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.menu-btn {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #00d9ff;
+    color: #00d9ff;
+    padding: 10px;
+    cursor: pointer;
+}

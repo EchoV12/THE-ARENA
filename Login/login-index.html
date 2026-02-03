@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Golden Arena - Login</title>
+    <link rel="stylesheet" href="login-style.css">
+    <script src="https://download.playfab.com/PlayFabClientApi.js"></script>
+</head>
+<body>
+
+    <div id="login-frame">
+        <div class="login-box">
+            <h1 class="title">CONNEXION</h1>
+
+            <div class="input-group">
+                <label>PSEUDO</label>
+                <input type="text" placeholder="Entre ton pseudo...">
+            </div>
+
+            <div class="restriction">
+                <label><h5><i>| caractères spéciaux interdit (., *, &, !, _, ...) |</i> </h5></label>
+            </div>
+
+            <div class="restriction">
+                <label><h5><i>| ⚠️​ 3 caractères minimum |</i> </h5></label>
+            </div>
+
+
+            <div class="input-group">
+                <label>MOT DE PASSE</label>
+                <input type="password" placeholder="........">
+            </div>
+
+            <div class="restriction">
+                <label><h5><i>| ⚠️​ 6 caractères minimum |</i> </h5></label>
+            </div>
+
+            <button class="login-btn">REJOINDRE L'ARÈNE</button>
+
+</div>
+
+<p id="error-message" style="color: #ff4444; font-size: 0.8rem; margin-bottom: 10px; display: none;"></p>
+
+
+
+            <p class="footer-link">Pas de compte ? <span>S'inscrire</span></p>
+        </div>
+    </div>
+
+    <script src="login-index.js"></script>
+
+
+</body>
+</html>

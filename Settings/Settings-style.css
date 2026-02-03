@@ -1,0 +1,59 @@
+:root {
+    --Black: #141414;
+    --secondaire: #00c3ff;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Courier New', monospace;
+}
+
+#settings-frame {
+    background-color: var(--Black);
+    border: 4px solid var(--secondaire);
+    padding: 30px;
+    width: 450px;
+    text-align: center;
+}
+
+.title { color: var(--secondaire); }
+.subtitle { color: var(--secondaire); font-size: 1.2rem; border-bottom: 1px solid var(--secondaire); }
+.gold-text { color: var(--secondaire); font-weight: bold; }
+
+.setting-section { margin-bottom: 30px; }
+
+/* Zone Personnage */
+.char-preview {
+    height: 100px;
+    border: 1px dashed var(--secondaire);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.locked-text { font-size: 0.7rem; color: #555; }
+
+/* Table des commandes */
+.controls-table {
+    width: 100%;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+.controls-table td { padding: 8px; border-bottom: 1px solid #222; }
+.controls-table td:last-child { color: var(--secondaire); text-align: right; }
+
+.back-btn {
+    width: 100%;
+    background: transparent;
+    color: var(--secondaire);
+    border: 2px solid var(--secondaire);
+    padding: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
