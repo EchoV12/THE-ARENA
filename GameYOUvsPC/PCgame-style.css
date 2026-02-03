@@ -1,0 +1,65 @@
+:root {
+    --secondaire: #00c3ff; /* Ta couleur dorée */
+    --black: #000000; /* Ton fond sombre */
+    --rouge: #ff0000
+
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#combat-arena {
+    /* Rectangle adaptatif */
+    width: 90vw;      /* 90% de la largeur */
+    height: 60vh;     /* 60% de la hauteur */
+    max-width: 900px; /* Limite pour les grands écrans */
+    
+    background-color: #000;
+    border: 4px solid #00d9ff; /* Ta bordure bleue */
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.2);
+}
+
+.stats-group {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* Rapprochement maximum des barres */
+}
+
+/* BARRE DE VIE - ÉPAISSE */
+.vie-container {
+    width: 180px;
+    height: 16px; /* Épaisseur marquée */
+    background: #333;
+    border: 1px solid #00d9ff;
+}
+
+.barre-rouge {
+    width: 100%;
+    height: 100%;
+    background-color: red; /* Ta couleur rouge */
+}
+
+/* BARRE DE STAMINA - FINE */
+.stamina-container {
+    width: 130px; /* Plus courte */
+    height: 4px;  /* Très fine */
+    background: #111;
+    border: 1px solid #0055ff;
+}
+
+.barre-bleue {
+    width: 100%;
+    height: 100%;
+    background-color: blue; /* Ta couleur bleue */
+}
